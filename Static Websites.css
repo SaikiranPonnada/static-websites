@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* Main page */
+.my-projects-homepage {
+    text-align: center;
+    padding: 15px;
+}
+
+.main-image {
+    width: 50vw;
+    margin-bottom: 10px;
+}
+
+.main-heading {
+    font-family: "Bree Serif";
+    color: #183b56;
+    font-size: 24px;
+}
+
+.main-description {
+    font-family: "Bree Serif";
+    color: #616e7c;
+    font-size: 14px;
+}
+
+
+.projects-image {
+    width: 200px;
+    height: 120px;
+    margin: 10px;
+}
+
+
+/* Tourism */
+.tourism-bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/ocean.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+
+.tourism-main-heading {
+    font-family: "Roboto";
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.tourism-paragraph {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.tourism-button {
+    color: white;
+    background-color: #25b1cc;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.favourite-places-bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/towerbg.png");
+    min-height: 100vh;
+    background-size: cover;
+    padding: 24px;
+}
+
+.favourite-places-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.favourite-place-card-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.favourite-place-card-heading {
+    color: #0f0e46;
+    font-family: "Roboto";
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.favourite-place-card-description {
+    color: #6c6b70;
+    font-family: "Roboto";
+    font-size: 13px;
+}
+
+.favourite-place-card-image {
+    width: 80px;
+    height: 100px;
+}
+
+.favourite-place-card-text-container {
+    margin-right: 15px;
+}
+
+.detailed-view-bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/seabg.png");
+    min-height: 100vh;
+    background-size: cover;
+    padding: 20px;
+}
+
+.detailed-view-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: bold;
+    padding: 24px;
+}
+
+.detailed-view-card-container {
+    background-color: white;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.detailed-view-card-heading {
+    color: #0f0e46;
+    font-family: "Roboto";
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.detailed-view-card-description {
+    color: #6c6b70;
+    font-family: "Roboto";
+    font-size: 13px;
+}
+
+.detailed-view-card-text-container {
+    padding: 16px;
+}
+
+
+
+/* Podcasts */
+.podcasts-homepage-background {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/podcasts-bg.png");
+    height: 30vh;
+    background-size: cover;
+
+}
+
+.podcast-heading {
+    font-family: "Bree Serif";
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.podcast-mainpage-description {
+    font-family: "Caveat";
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.podcasts-card-container {
+    padding: 15px;
+}
+
+.details-card {
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+}
+
+.podcast-image {
+    margin-top: 10px;
+    height: 130px;
+    width: 190px;
+}
+
+.podcast-name {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #151765;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.episodes-count {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #5a7184;
+}
+
+.podcasts-header {
+    background-color: #151765;
+    padding: 20px;
+    height: 170px;
+}
+
+.podcast-text-container {
+    padding: 10px;
+}
+
+.category {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 12px;
+}
+
+.podcast-title {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.podcast-caption {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 12px;
+}
+
+.podcast-episode-container {
+    margin: 10px;
+}
+
+.podcast-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.podcast-duration {
+    color: #151765;
+    font-family: "Roboto";
+    font-size: 10px;
+}
+
+.button-container {
+    margin: 20px;
+}
+
+.button {
+    background-color: #141961;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 12px;
+    width: 75px;
+    height: 24px;
+    border-radius: 25px;
+    border-width: 0px;
+}
+
+
+
+
+/* Popular Books */
+.popular-books-homepage {
+    background-color: #1b1b1b;
+    padding: 24px;
+    min-height: 100vh;
+}
+
+.popular-book-heading {
+    color: #ffffff;
+    font-family: "Bree Serif";
+    font-size: 28px;
+}
+
+.popular-book-container {
+    background-color: #e6f6ff;
+    border-radius: 8px;
+    width: 400px;
+    border: 2px solid yellow;
+}
+
+.homepage-kalam-image {
+    width: 126px;
+    height: 180px;
+}
+
+.popular-book-details-container {
+    padding: 15px;
+    width: 200px;
+}
+
+.popular-book-container-heading {
+    color: #183b56;
+    font-family: "Bree Serif";
+    font-size: 16px;
+}
+
+.popular-book-container-description {
+    color: #06070d;
+    font-family: "Bree Serif";
+    font-size: 12px;
+}
+
+.popular-book-container-authorname {
+    color: #183b56;
+    font-family: "Bree Serif";
+    font-size: 10px;
+}
+
+.popular-book-button {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.recommended-books-heading {
+    font-family: "Bree Serif";
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.recommended-books-container {
+    margin-bottom: 10px;
+}
+
+.homepage-recommended-image {
+    height: 125px;
+    width: 80px;
+}
+
+.recommended-book-details-container {
+    margin-left: 10px;
+}
+
+.recommended-books-container-heading {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Bree Serif";
+
+}
+
+.recommended-books-container-description {
+    color: #e4e7eb;
+    font-size: 12px;
+    font-family: "Bree Serif";
+}
+
+.book-details-page {
+    background-color: #1b1b1b;
+    padding: 24px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.book-details-page-image {
+    width: 190px;
+    height: 294px;
+    margin-bottom: 20px;
+}
+
+.book-name {
+    color: #ffffff;
+    font-family: "Bree Serif";
+    font-size: 28px;
+}
+
+.author {
+    color: #9aa5b1;
+    font-family: "Bree Serif";
+    font-size: 12px;
+}
+
+.book-description {
+    text-align: left;
+    color: #e4e7eb;
+    font-family: "Bree Serif";
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Newspaper */
+.np-bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/newsbg.png");
+    height: 100vh;
+    background-size: cover;
+}
+
+.np-card-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.np-main-heading {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.np-paraa {
+    color: #7b8794;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+/* Articles */
+
+.articles-bgs {
+    background-color: #225db0;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.articles-heading {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.articles-homepage-description {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.article-containers {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.article-container-image {
+    height: 50px;
+    width: 50px;
+}
+
+.article-container-image-name {
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.artile-list {
+    color: #ffffff;
+}
+
+.page-back-button {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #ffffff;
+}

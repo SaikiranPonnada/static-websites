@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionMainpage">
+        <div class="my-projects-homepage">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/software-developer-img.png" class="main-image" onclick="display('')" />
+            <h1 class="main-heading"> My projects</h1>
+            <p class="main-description"> These are a few basic static website projects that i have developed using HTML, CSS and Bootstrap.</p>
+
+
+            <div class="d-flex flex-row justify-content-center">
+                <div style="border: black 2px solid; cursor: pointer;" class="m-1">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/ocean.jpg" class="projects-image" onclick="display('sectionTourism')" />
+                    <h4>TOURISM</h4>
+                </div>
+                <div style="border: black 2px solid; cursor: pointer;" class="m-1">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-apj-img.png" class="projects-image" onclick="display('sectionPopularBooksHomepage')" />
+                    <h4>POPULAR BOOKS</h4>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <div style="border: black 2px solid; cursor: pointer;" class="m-1">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/podcasts-bg.png" class="projects-image" onclick="display('sectionPodcasts')" />
+                    <h4>PODCASTS</h4>
+                </div>
+                <div style="border: black 2px solid; cursor: pointer;" class="m-1">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/news-paper-img.png" class="projects-image" onclick="display('sectionNewspaper')" />
+                    <h4>NEWS PAPER</h4>
+                </div>
+
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <div style="border: black 2px solid; cursor: pointer;" class="m-1">
+                    <img src="https://assets.ccbp.in/frontend/static-website/articles-technology-c1-img.png" class="projects-image" onclick="display('sectionArticles')" />
+                    <h4>ARTICLES</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Tourism -->
+
+    <div id="sectionTourism">
+        <div class="tourism-bg-container d-flex flex-column justify-content-center align-items-center">
+            <h1 class="tourism-main-heading">Tourism</h1>
+            <p class="tourism-paragraph">Plan your trip.</p>
+            <button class="tourism-button" onclick="display('sectionFavouritePlaces')">Get Started</button>
+            <hr />
+
+            <button class="btn btn-secondary" onclick="display('sectionMainpage')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionFavouritePlaces">
+        <div class="favourite-places-bg-container">
+            <h1 class="favourite-places-heading">Favourite Places</h1>
+            <div class="favourite-place-card-container d-flex flex-row justify-content-between" onclick="display('sectionTajMahalDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Taj Mahal</h1>
+                    <p class="favourite-place-card-description">
+                        If there was just one symbol to represent all of India, it would be the
+                        Taj Mahal
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row justify-content-between" onclick="display('sectionGoldenTempleDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Golden Temple</h1>
+                    <p class="favourite-place-card-description">
+                        Amritsar is world-famous for the beautiful and highly revered Golden
+                        Temple
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row justify-content-between" onclick="display('sectionMysoreDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Mysore Palace</h1>
+                    <p class="favourite-place-card-description">
+                        The Mysore Palace is a historical palace and the royal residence at
+                        Mysore .
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace-img.png" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row justify-content-between" onclick="display('sectionVaranasiDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Varanasi Temple</h1>
+                    <p class="favourite-place-card-description">
+                        Varanasi Temple is most famous Hindu temples dedicated to Lord Shiva
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi-temple-img.png" class="favourite-place-card-image" />
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionTourism')">back</button>
+        </div>
+    </div>
+
+    <div id="sectionTajMahalDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c2-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c3-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Taj Mahal</h1>
+                    <p class="detailed-view-card-description">
+                        The Taj Mahal is considered to be the greatest architectural achievement
+                        in the whole range of Indo-Islamic architecture. Its recognised
+                        architectonic beauty has a rhythmic combination of solids and voids,
+                        concave and convex and light shadow; such as arches and domes further
+                        increases the aesthetic aspect. Not a piece of architecture, as other
+                        buildings are, but the proud passions of an emperor’s love wrought in
+                        living stones.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+
+    <div id="sectionGoldenTempleDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="goldenTempleCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#goldenTempleCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#goldenTempleCarousel" data-slide-to="1"></li>
+                        <li data-target="#goldenTempleCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple1-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple2-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/goldentemple3-img.png" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#goldenTempleCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#goldenTempleCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Golden Temple</h1>
+                    <p class="detailed-view-card-description">
+                        The Golden Temple, also known as Harmandir Sahib is a gurdwara
+                        located in the city of Amritsar, Punjab, India. There are many
+                        places to visit Near Golden Temple.
+                    </p>
+                    <ol class="detailed-view-card-description">
+                        <li>Jallianwala Bagh</li>
+                        <li>Wagah Border</li>
+                        <li>Harike Wetland</li>
+                        <li>Bathinda Fort</li>
+                    </ol>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+
+    <div id="sectionMysoreDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/l7JaWW7gw0M?rel=0" allowfullscreen></iframe>
+                </div>
+
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Mysore Palace</h1>
+                    <p class="detailed-view-card-description">
+                        The Mysore Palace, also known as Amba Vilas Palace, is a historical palace and a royal residence. It is located in Mysore, Karnataka. It used to be the official residence of the Wadiyar dynasty and the seat of the Kingdom of Mysore. The palace is in the centre of Mysore, and faces the Chamundi Hills eastward.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+
+    <div id="sectionVaranasiDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rDsOi3MByCI?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Varanasi Temple</h1>
+                    <p class="detailed-view-card-description">
+                        Varanasi is famous for its production of silks and brocades with gold and silver thread work. A renowned carpet-weaving centre is at Bhadoi. Wooden toys, bangles made of glass, ivory work, and brassware are also produced in Varanasi. The city is host to numerous religious festivals.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+
+
+
+    <!-- Popular Books -->
+
+    <div id="sectionPopularBooksHomepage">
+        <div class="popular-books-homepage">
+            <h1 class="popular-book-heading"> Popular Book </h1>
+            <div class="popular-book-container d-flex flex-row">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-apj-img.png" class="homepage-kalam-image" />
+                <div class="popular-book-details-container">
+                    <h1 class="popular-book-container-heading"> Wings of Fire</h1>
+                    <p class="popular-book-container-description"> An Autobiography of Abdul Kalam</p>
+                    <p class="popular-book-container-authorname"> by Arun Tiwari</p>
+
+                    <button class="popular-book-button btn btn-primary" onclick="display('sectionWingsofFire')"> Read Now </button>
+
+                </div>
+            </div>
+            <h1 class="recommended-books-heading"> Recommended Books </h1>
+            <div class="recommended-books-container d-flex flex-row">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png" class="homepage-recommended-image" />
+                <div class="recommended-book-details-container">
+                    <h1 class="recommended-books-container-heading"> The 3 mistakes of my life</h1>
+                    <p class="recommended-books-container-description"> Indian author <br />by Chetan Bhagat </p>
+                    <button class="popular-book-button btn btn-primary" onclick="display('sectiontheThreemistakesofmylife')"> Read Now</button>
+                </div>
+
+            </div>
+
+            <div class="recommended-books-container d-flex flex-row">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/harrypotter-img.png" class="homepage-recommended-image" />
+                <div class="recommended-book-details-container">
+                    <h1 class="recommended-books-container-heading"> Harry Potter </h1>
+                    <p class="recommended-books-container-description"> and the sorcerer's stone <br />by J.K. Rowling </p>
+
+                    <button class="popular-book-button btn btn-primary" onclick="display('sectionHarrypotter')"> Read Now</button>
+
+                </div>
+
+            </div>
+            <button class="btn btn-primary" onclick="display('sectionMainpage')"> Back</button>
+        </div>
+    </div>
+
+    <div id="sectionWingsofFire">
+        <div class="book-details-page">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-apj-img.png" class="book-details-page-image" />
+
+            <h1 class="book-name"> Wings of Fire </h1>
+            <p class="author"> by Arun Tiwari</p>
+
+            <p class="book-description">Every common man who by his sheer grit and hard work achieves success should share his story with the rest for they may find inspiration and strength to go on, in his story. The 'Wings of Fire' is one such autobiography by visionary scientist Dr. APJ Abdul Kalam, who from very humble beginnings rose to be the President of India. The book is full of insights, personal moments and life experiences of Dr. Kalam. It gives us an understanding on his journey of success.</p>
+
+            <button class="popular-book-button btn btn-warning" onclick="display('sectionPopularBooksHomepage')"> Back</button>
+            <button class="popular-book-button btn btn-primary"> Buy Now</button>
+
+        </div>
+    </div>
+    <div id="sectiontheThreemistakesofmylife">
+        <div class="book-details-page">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/book-chetan-bhagat-img.png" class="details-page-image" />
+
+            <h1 class="book-name"> The 3 mistakes of my life </h1>
+            <p class="author"> by Chetan Bhagat</p>
+
+            <p class="book-description">The 3 Mistakes of my life is the third novel written by eminent Indian Author Chetan Bhagat. Based on cricket, business and religion, the novel is set against the backdrop of beautiful city Ahmedabad. Revolving around three young Indian boys Omi, Ishaan and Govind, the book goes on to narrate how the three are trying their best to make ends meet in the city.</p>
+
+            <button class="popular-book-button btn btn-warning" onclick="display('sectionPopularBooksHomepage')"> Back</button>
+            <button class="popular-book-button btn btn-primary"> Buy Now</button>
+
+        </div>
+    </div>
+    <div id="sectionHarrypotter">
+        <div class="book-details-page">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/harrypotter-img.png" class="details-page-image" />
+
+            <h1 class="book-name"> Harry Potter </h1>
+            <p class="author"> by J.K. Rowling</p>
+
+            <p class="book-description">Escape to Hogwarts with the unmissable series that has sparked a lifelong reading journey for children and families all over the world. The magic starts here.
+                Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed</p>
+
+            <button class="popular-book-button btn btn-warning" onclick="display('sectionPopularBooksHomepage')"> Back</button>
+            <button class="popular-book-button btn btn-primary"> Buy Now</button>
+
+        </div>
+    </div>
+
+
+
+    <!-- Podcasts -->
+
+    <div id="sectionPodcasts">
+        <div class="podcasts-homepage-background text-center">
+            <h1 class="podcast-heading"> Podcasts</h1>
+            <p class="podcast-mainpage-description">Best podcasts to listen now.</p>
+        </div>
+
+        <div class="podcasts-card-container d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex flex-row">
+                <div class="details-card" onclick="display('sectionPuriJagannadh')">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="podcast-image" />
+                    <h1 class="podcast-name"> Puri Jagannadh </h1>
+                    <p class="episodes-count"> 24 Episodes</p>
+                </div>
+                <div class="details-card" onclick="display('sectionTedX')">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" class="podcast-image" />
+                    <h1 class="podcast-name"> Tedx talks </h1>
+                    <p class="episodes-count"> 12 Episodes</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row">
+
+                <div class="details-card" onclick="display('sectionSadhguru')">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" class="podcast-image" />
+                    <h1 class="podcast-name"> Sadhguru </h1>
+                    <p class="episodes-count"> 49 Episodes</p>
+                </div>
+                <div class="details-card" onclick="display('sectionONpurpose')">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" class="podcast-image" />
+                    <h1 class="podcast-name"> On purpose </h1>
+                    <p class="episodes-count"> 49 Episodes</p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionMainpage')">
+                back
+            </button>
+        </div>
+    </div>
+
+    <div id="sectionPuriJagannadh">
+
+        <div class="podcasts-header d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <p class="category"> Podcast </p>
+                <h1 class="podcast-title"> Puri Jagannadh Podcast </h1>
+                <p class="podcast-caption"> The Puri Jagannadh Podcast </p>
+            </div>
+        </div>
+
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name"> Molecular Gastronomy </h1>
+                <p class="podcast-description"> Anything happens there it will not cook... </p>
+                <p class="podcast-duration"> 15 min </p>
+            </div>
+        </div>
+
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name"> Mysterious book </h1>
+                <p class="podcast-description"> The voynich manuscript is the 15th century book </p>
+                <p class="podcast-duration"> 12 min </p>
+            </div>
+        </div>
+
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name"> Predator drone </h1>
+                <p class="podcast-description"> The most powerful drone it is 10feet height </p>
+                <p class="podcast-duration"> 10 min </p>
+            </div>
+        </div>
+
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name"> Paella </h1>
+                <p class="podcast-description"> The national dish of spain </p>
+                <p class="podcast-duration"> 6 min </p>
+            </div>
+        </div>
+
+
+        <div class="button-container d-flex flex-row justify-content-end">
+            <button class="button" onclick="display('sectionPodcasts')"> Back </button>
+        </div>
+    </div>
+
+    <div id="sectionTedX">
+
+        <div class="podcasts-header d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <p class="category">The Tedx Podcast </p>
+                <h1 class="podcast-title"> The Tedx Podcast </h1>
+                <p class="podcast-caption"> The Tedx Podcast </p>
+            </div>
+        </div>
+
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name">The science of friction </h1>
+                <p class="podcast-description"> Tribology its's a funny sounding word you might.. </p>
+                <p class="podcast-duration"> 15 min </p>
+            </div>
+        </div>
+
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name"> Unleash you </h1>
+                <p class="podcast-description"> what can we learn from the world's most enduringly </p>
+                <p class="podcast-duration"> 12 min </p>
+            </div>
+
+        </div>
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name"> 3 psychological tricks </h1>
+                <p class="podcast-description"> we all want to save more money but overall </p>
+                <p class="podcast-duration"> 10 min </p>
+            </div>
+        </div>
+
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name"> The case for stubborn </h1>
+                <p class="podcast-description"> This decade is a moment of choice unlike any </p>
+                <p class="podcast-duration"> 6 min </p>
+            </div>
+        </div>
+
+
+        <div class="button-container d-flex flex-row justify-content-end">
+            <button class="button" onclick="display('sectionPodcasts')"> Back </button>
+        </div>
+    </div>
+
+    <div id="sectionSadhguru">
+        <div class="podcasts-header d-flex flex-row">
+
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <p class="category">The sadhguru Podcast </p>
+                <h1 class="podcast-title"> The sadhguru Podcast </h1>
+                <p class="podcast-caption"> The sadhguru Podcast </p>
+            </div>
+
+        </div>
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name">Head or Heart </h1>
+                <p class="podcast-description"> Sadhguru shares his wisdow on how to make.. </p>
+                <p class="podcast-duration"> 15 min </p>
+            </div>
+        </div>
+
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name"> How to equip yourself </h1>
+                <p class="podcast-description"> society and human interactions are going </p>
+                <p class="podcast-duration"> 12 min </p>
+            </div>
+        </div>
+
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name">How not to get irritated </h1>
+                <p class="podcast-description"> how do you see an unpleasant spouse the... </p>
+                <p class="podcast-duration"> 10 min </p>
+            </div>
+        </div>
+
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name"> Isha kriya </h1>
+                <p class="podcast-description"> Rooted in the timeless wisdom if the yogic </p>
+                <p class="podcast-duration"> 6 min </p>
+            </div>
+        </div>
+
+
+        <div class="button-container d-flex flex-row justify-content-end">
+            <button class="button" onclick="display('sectionPodcasts')"> Back </button>
+        </div>
+    </div>
+
+    <div id="sectionONpurpose">
+        <div class="podcasts-header d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <p class="category">Podcast </p>
+                <h1 class="podcast-title"> On Purpose with jay </h1>
+                <p class="podcast-caption"> The Jay Shetty Podcast </p>
+            </div>
+        </div>
+
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name"> Patrick Bet David </h1>
+                <p class="podcast-description"> Are you an entreprenuer or have dreams of mental..</p>
+                <p class="podcast-duration"> 15 min </p>
+            </div>
+        </div>
+
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name"> 5 Techniques to cope </h1>
+                <p class="podcast-description"> Does anxiety looms around every corner of your.. </p>
+                <p class="podcast-duration"> 12 min </p>
+            </div>
+        </div>
+
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name">Radhanath swami ON</h1>
+                <p class="podcast-description">World-renowed spiritual leader and philanthropist </p>
+                <p class="podcast-duration"> 10 min </p>
+            </div>
+        </div>
+
+
+
+        <div class="podcast-episode-container d-flex flex-row">
+
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" class="podcast-image" />
+
+            <div class="podcast-text-container">
+                <h1 class="podcast-name"> 3 ways to let go </h1>
+                <p class="podcast-description"> Do the opinions of others veer you from the core... </p>
+                <p class="podcast-duration"> 6 min </p>
+            </div>
+        </div>
+
+
+        <div class="button-container d-flex flex-row justify-content-end">
+            <button class="button" onclick="display('sectionPodcasts')"> Back </button>
+        </div>
+    </div>
+
+
+
+
+    <!-- Newspaper -->
+
+    <div id="sectionNewspaper">
+        <div class="np-bg-container d-flex flex-column justify-content-end">
+            <div class="np-card-container">
+                <p class="np-paraa"> NEWS OF THE DAY </p>
+                <h1 class="np-main-heading"> All educational institutions in Assam to reopen from November 2</h1>
+                <p class="np-paraa"> Uttar Pradesh's Gautham buddh Nagar recorded 107 new Covid-19 cases on saturday. pushing the district's infextion tally
+                    to 15803, official data showed. The number of active cases come down further to 1384 from 1477 on Friday and 1532 on Thursdya
+                    according to data released bu UP Health dept for a 24-hour period.
+                </p>
+                <button class="btn btn-dark"> Read more </button>
+                <button class="btn btn-primary" onclick="display('sectionMainpage')"> Back</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Articles -->
+    <div id="sectionArticles">
+        <div class="articles-bgs d-flex flex-column justify-content-start align-items-center">
+            <h1 class="articles-heading"> Empower yourself</h1>
+            <p class="articles-homepage-description"> By Learning new courses from worlds leading experts </p>
+            <div class="d-flex flex-row">
+                <div class="article-containers d-flex flex-column justify-content-center align-items-center" onclick="display('sectionTechnology')">
+                    <img src="https://assets.ccbp.in/frontend/static-website/articles-technology-icon-img.png" class="article-container-image" />
+                    <p class="article-container-image-name"> Technology </p>
+                </div>
+                <div class="article-containers d-flex flex-column justify-content-center align-items-center" onclick="display('sectionScience')">
+                    <img src="https://assets.ccbp.in/frontend/static-website/articles-science-icon-img.png" class="article-container-image" />
+                    <p class="article-container-image-name"> science </p>
+                </div>
+            </div>
+            <div class="d-flex flex-row">
+                <div class="article-containers d-flex flex-column justify-content-center align-items-center" onclick="display('sectionHealthcare')">
+                    <img src="https://assets.ccbp.in/frontend/static-website/articles-healthcare-icon-img.png" class="article-container-image" />
+                    <p class="article-container-image-name"> Health Care </p>
+                </div>
+                <div class="article-containers d-flex flex-column justify-content-center align-items-center" onclick="display('sectionBusiness')">
+                    <img src="https://assets.ccbp.in/frontend/static-website/articles-business-icon-img.png" class="article-container-image" />
+                    <p class="article-container-image-name"> Business </p>
+                </div>
+            </div>
+            <button class="btn btn-secondary" onclick="display('sectionMainpage')"> Back</button>
+        </div>
+    </div>
+
+    <div id="sectionTechnology">
+        <div class="articles-bgs">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-technology-c1-img.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-technology-c2-img.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-technology-c3-img.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <h1 class="articles-heading"> List of Topics</h1>
+            <ul class="artile-list">
+                <li> AI </li>
+                <li> Data science</li>
+                <li>ML </li>
+                <li> IoT</li>
+                <li> Block chain</li>
+                <li> Virtual Reality</li>
+                <li> RPA </li>
+            </ul>
+
+            <button class="page-back-button" onclick="display('sectionArticles')"> Back </button>
+
+        </div>
+    </div>
+
+    <div id="sectionScience">
+        <div class="articles-bgs">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-science-c1-img.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-science-c2-img.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-science-c3-img.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <h1 class="articles-heading"> List of Topics</h1>
+            <ul class="artile-list">
+                <li> Biology </li>
+                <li> zoology</li>
+                <li>cardiology </li>
+                <li> chemistry</li>
+                <li> Bio chemistry</li>
+                <li> Nano science</li>
+                <li> Astronomy </li>
+            </ul>
+
+            <button class="page-back-button" onclick="display('sectionArticles')"> Back </button>
+
+        </div>
+    </div>
+
+    <div id="sectionHealthcare">
+        <div class="articles-bgs">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-healthcare-c1-img.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-healthcare-c2-img.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-healthcare-c3-img.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <h1 class="articles-heading"> List of Topics</h1>
+            <ul class="artile-list">
+                <li> COVID-19 </li>
+                <li> Latest in Pharmaceuticals</li>
+                <li>Medicines </li>
+                <li> Infrastructure management</li>
+
+            </ul>
+
+            <button class="page-back-button" onclick="display('sectionArticles')"> Back </button>
+
+        </div>
+    </div>
+
+    <div id="sectionBusiness">
+        <div class="articles-bgs">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-business-c1-img.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-business-c2-img.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-business-c3-img.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <h1 class="articles-heading"> List of Topics</h1>
+            <ul class="artile-list">
+                <li> Business Model </li>
+                <li> 21st century business skills</li>
+                <li>Traditional Methods of business </li>
+                <li> zero to hero in business</li>
+
+            </ul>
+
+            <button class="page-back-button" onclick="display('sectionArticles')"> Back </button>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
